@@ -1,0 +1,15 @@
+# 1) How many CPU workers for key/gen and LMDB lookups
+workers_gen=8
+workers_db=8
+
+# 2) Pattern blocks
+#    Each block starts with "pattern_type=" and ends before the next blank line.
+#    Supported pattern_type values:
+#      octal → eight hex chars, each repeated 8× in sequence
+#      sequence_4x16 → 4-symbol sequence repeated 16 times
+
+pattern_type=octal
+chars=0123456789abcdef
+
+pattern_type=sequence_4x16
+chars=0123456789abcdef
