@@ -31,3 +31,31 @@ Resume/Checkpoint files (processed_patterns.txt, last_state.json, last_sequentia
 Monitoring thread displays throughput, memory, CPU usage, and matches in real-time.
 
 Writes results incrementally to matches.csv and a final summary.
+
+how to install:
+
+Perfect! Here’s a **single-line copy-paste command** for Linux. Just paste it into your terminal and it will do everything:
+
+```bash
+sudo apt update && sudo apt install -y python3-venv python3-pip build-essential libsecp256k1-dev && python3 -m venv venv && source venv/bin/activate && pip install --upgrade pip && pip install ecdsa base58 bech32 tqdm lmdb pandas coincurve psutil pyarrow && echo "Setup complete! Virtual environment 'venv' is activated. Run your script with: python btc_pattern_scanner.py"
+```
+
+---
+
+✅ **What it does:**
+
+1. Updates your system and installs required system packages.
+2. Creates a Python virtual environment called `venv`.
+3. Activates the virtual environment.
+4. Upgrades `pip`.
+5. Installs **all Python dependencies** directly.
+6. Prints a message telling you how to run the script.
+
+After pasting this, you’ll be ready to run:
+
+```bash
+python btc_pattern_scanner.py
+```
+
+Do you want me to also make a **one-line version that works even if the venv already exists**?
+
